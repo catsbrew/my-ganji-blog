@@ -1,6 +1,6 @@
-import { Skeleton } from '@/components/ui/skeleton';
-import AppSidebar from './ui/app-sidebar';
+import AppSidebar from '../ui/app-sidebar';
 import AppPostSkeleton from '@/components/ui/app-post-skeleton';
+import Posts from '../ui/posts';
 
 export default function Home() {
   return (
@@ -21,18 +21,8 @@ export default function Home() {
                 내가 만든 쿸히~~ 이
               </p>
             </div>
-            <div className="grid grid-cols-4 gap-6">
-              <AppPostSkeleton />
-              <AppPostSkeleton />
-              <AppPostSkeleton />
-              <AppPostSkeleton />
-
-              <AppPostSkeleton />
-              <AppPostSkeleton />
-              <AppPostSkeleton />
-              <AppPostSkeleton />
-
-              <AppPostSkeleton />
+            <div className="grid grid-cols-3 gap-6">
+              <Posts />
               <AppPostSkeleton />
               <AppPostSkeleton />
               <AppPostSkeleton />
