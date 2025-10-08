@@ -25,7 +25,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <div className="w-[100vw] h-[100vh] flex flex-col items-center m-auto">
+            {children}
+          </div>
         </ThemeProvider>
       </body>
     </html>

@@ -6,7 +6,7 @@ function AppSidebar() {
     <aside className="min-w-60 w-60 flex flex-col gap-6">
       <div className="flex items-center gap-2">
         <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">
-          사이드바
+          Categories
         </h4>
         <ChevronDown className="mt-1" />
       </div>
@@ -15,49 +15,49 @@ function AppSidebar() {
           variant={'ghost'}
           className="justify-start text-muted-foreground hover:text-white hover:pl-6 transition-all duration-500 cursor-pointer"
         >
-          포스트1
+          카테고리1
         </Button>
         <Button
           variant={'ghost'}
           className="justify-start text-muted-foreground hover:text-white hover:pl-6 transition-all duration-500 cursor-pointer"
         >
-          포스트2
+          카테고리2
         </Button>
         <Button
           variant={'ghost'}
           className="justify-start text-muted-foreground hover:text-white hover:pl-6 transition-all duration-500 cursor-pointer"
         >
-          포스트3
+          카테고리3
         </Button>
         <Button
           variant={'ghost'}
           className="justify-start text-muted-foreground hover:text-white hover:pl-6 transition-all duration-500 cursor-pointer"
         >
-          포스트4
+          카테고리4
         </Button>
         <Button
           variant={'ghost'}
           className="justify-start text-muted-foreground hover:text-white hover:pl-6 transition-all duration-500 cursor-pointer"
         >
-          포스트5
+          카테고리5
         </Button>
         <Button
           variant={'ghost'}
           className="justify-start text-muted-foreground hover:text-white hover:pl-6 transition-all duration-500 cursor-pointer"
         >
-          포스트6
+          카테고리6
         </Button>
         <Button
           variant={'ghost'}
           className="justify-start text-muted-foreground hover:text-white hover:pl-6 transition-all duration-500 cursor-pointer"
         >
-          포스트7
+          카테고리7
         </Button>
         <Button
           variant={'ghost'}
           className="justify-start text-muted-foreground hover:text-white hover:pl-6 transition-all duration-500 cursor-pointer"
         >
-          포스트8
+          카테고리8
         </Button>
       </div>
     </aside>
