@@ -1,9 +1,9 @@
-import { Button } from '@/components/ui';
+import AppSidebar from './ui/app-sidebar';
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-      <Button>Click me</Button>
+    <main className="w-full h-full min-h-[720px] flex p-6 gap-6">
+      <AppSidebar />
     </main>
   );
 }
