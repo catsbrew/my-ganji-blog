@@ -13,17 +13,52 @@ function AppSidebar() {
       <div className="w-full flex flex-col gap-2">
         <Button
           variant={'ghost'}
-          className="justify-start text-muted-foreground hover:text-white hover:pl-6 transition-all duration-500"
+          className="justify-start text-muted-foreground hover:text-white hover:pl-6 transition-all duration-500 cursor-pointer"
         >
           포스트1
         </Button>
-        <Button variant={'ghost'}>포스트2</Button>
-        <Button variant={'ghost'}>포스트3</Button>
-        <Button variant={'ghost'}>포스트4</Button>
-        <Button variant={'ghost'}>포스트5</Button>
-        <Button variant={'ghost'}>포스트6</Button>
-        <Button variant={'ghost'}>포스트7</Button>
-        <Button variant={'ghost'}>포스트8</Button>
+        <Button
+          variant={'ghost'}
+          className="justify-start text-muted-foreground hover:text-white hover:pl-6 transition-all duration-500 cursor-pointer"
+        >
+          포스트2
+        </Button>
+        <Button
+          variant={'ghost'}
+          className="justify-start text-muted-foreground hover:text-white hover:pl-6 transition-all duration-500 cursor-pointer"
+        >
+          포스트3
+        </Button>
+        <Button
+          variant={'ghost'}
+          className="justify-start text-muted-foreground hover:text-white hover:pl-6 transition-all duration-500 cursor-pointer"
+        >
+          포스트4
+        </Button>
+        <Button
+          variant={'ghost'}
+          className="justify-start text-muted-foreground hover:text-white hover:pl-6 transition-all duration-500 cursor-pointer"
+        >
+          포스트5
+        </Button>
+        <Button
+          variant={'ghost'}
+          className="justify-start text-muted-foreground hover:text-white hover:pl-6 transition-all duration-500 cursor-pointer"
+        >
+          포스트6
+        </Button>
+        <Button
+          variant={'ghost'}
+          className="justify-start text-muted-foreground hover:text-white hover:pl-6 transition-all duration-500 cursor-pointer"
+        >
+          포스트7
+        </Button>
+        <Button
+          variant={'ghost'}
+          className="justify-start text-muted-foreground hover:text-white hover:pl-6 transition-all duration-500 cursor-pointer"
+        >
+          포스트8
+        </Button>
       </div>
     </aside>
   );
