@@ -1,42 +1,33 @@
 import Link from 'next/link';
 import { getBlogPosts } from '../blog/utils';
-import Image from 'next/image';
+import {
+  Card,
+  CardAction,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card';
 
 export default function Posts() {
   const posts = getBlogPosts();
-  console.log(posts);
 
   return (
-    <div className="w-full h-full flex flex-col items-center">
+    // className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6"
+    <div className="flex flex-col space-y-6">
       {posts.map((post) => (
         <Link
           key={post.slug}
           className="w-full h-full flex flex-col space-y-1"
           href={`/blog/${post.slug}`}
         >
-          <div className="w-full h-full flex flex-col justify-between">
-            <div className="w-full h-[80%] relative aspect-[16/9] object-cover  rounded-md overflow-hidden">
-              <Image
-                src={`${post.metadata.image}`}
-                fill
-                alt="zenitsu"
-                // sizes="(max-width: 640px) 100vw, 800px" // 성능 개선을 위해 sizes 추가
-                className="object-cover"
-              />
-            </div>
-            <div className="flex flex-col">
-              <p className="text-neutral-900 dark:text-neutral-100 tracking-tight text-lg">
-                {post.metadata.title}
-              </p>
-              <p className="text-neutral-600 dark:text-neutral-400 tabular-nums text-sm">
-                {
-                  new Date(post.metadata.publishedAt)
-                    .toISOString()
-                    .split('T')[0]
-                }
-              </p>
-            </div>
-          </div>
+          <Card className="hover:bg-accent/25 hover:transition-all hover:duration-500">
+            <CardHeader className="flex justify-between items-center">
+              <CardTitle className="text-2xl">{post.metadata.title}</CardTitle>
+            </CardHeader>
+            <CardContent className="text-sm">
+              {post.metadata.summary}
+            </CardContent>
+          </Card>
         </Link>
       ))}
     </div>

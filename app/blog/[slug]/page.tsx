@@ -1,7 +1,6 @@
 import { notFound } from 'next/navigation';
 import { getBlogPosts } from '../utils';
 import { Separator } from '@/components/ui';
-import Image from 'next/image';
 
 export default async function Page(props: {
   params: Promise<{ slug: string }>;
@@ -10,21 +9,14 @@ export default async function Page(props: {
   const { default: Post } = await import(`@/app/blog/contents/${slug}.mdx`);
 
   const post = getBlogPosts().find((post) => post.slug === slug);
-  console.log(post?.metadata);
 
   if (!post) {
     notFound();
   }
 
   return (
-    <>
-      <div className="w-full aspect-[16/9] relative">
-        <Image
-          src={post.metadata.image || 'image/'}
-          fill
-          alt="zenitsu"
-          className="-z-50 !m-0"
-        />
+    <div className="py-20">
+      <div className="w-full">
         <div className="flex flex-col align-bottom">
           <h1 className="title font-semibold text-2xl tracking-tighter">
             {post.metadata.title}
@@ -40,7 +32,7 @@ export default async function Page(props: {
       <article>
         <Post />
       </article>
-    </>
+    </div>
   );
 }
 

@@ -1,13 +1,11 @@
-import AppSidebar from '../ui/app-sidebar';
-import AppPostSkeleton from '@/components/ui/app-post-skeleton';
 import Posts from '../ui/posts';
 
 export default function Home() {
   return (
-    <div className="w-full max-w-[1328px] pt-12 flex-1">
-      <main className="container w-full h-full min-h-[720px] flex p-6 gap-6">
+    <div className="w-full max-w-4xl pt-20 flex-1">
+      <main className="w-full h-full min-h-[720px] flex p-6 gap-6">
         {/* 사이드바 */}
-        <AppSidebar />
+        {/* <AppSidebar /> */}
         <section className="flex-1 flex flex-col gap-12">
           {/* 포스트 리스트 */}
           <div className="w-full flex flex-col gap-6">
@@ -17,20 +15,9 @@ export default function Home() {
                   Posts
                 </h4>
               </div>
-              <p className="md:text-base text-muted-foreground">
-                내가 만든 쿸히~~ 이
-              </p>
             </div>
-            <div className="grid grid-cols-3 gap-6">
+            <div>
               <Posts />
-              <AppPostSkeleton />
-              <AppPostSkeleton />
-              <AppPostSkeleton />
-
-              <AppPostSkeleton />
-              <AppPostSkeleton />
-              <AppPostSkeleton />
-              <AppPostSkeleton />
             </div>
           </div>
         </section>

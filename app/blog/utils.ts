@@ -1,8 +1,7 @@
 import fs from 'fs';
 import path from 'path';
-import matter from 'gray-matter'; // ✨ gray-matter 라이브러리 추가
+import matter from 'gray-matter';
 
-// --- 타입 정의 ---
 export type Metadata = {
   title: string;
   publishedAt: string;
@@ -17,8 +16,6 @@ export type Post = {
   slug: string;
   content: string; // Frontmatter를 제외한 MDX 본문 내용
 };
-
-// --- MDX 파일 처리 함수 ---
 
 /**
  * MDX 파일의 frontmatter를 gray-matter 라이브러리를 사용하여 파싱합니다.

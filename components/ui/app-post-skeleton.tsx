@@ -1,5 +1,7 @@
 import { Skeleton } from './skeleton';
 
-export default function AppPostSkeleton() {
+function AppPostSkeleton() {
   return <Skeleton className="w-full h-[370px]" />;
 }
+
+export { AppPostSkeleton };

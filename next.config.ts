@@ -11,6 +11,12 @@ const withMDX = createMDX({
   extension: /\.(md|mdx)$/,
   options: {
     remarkPlugins: ['remark-frontmatter'],
+    rehypePlugins: [
+      [
+        'rehype-pretty-code',
+        { keepBackground: true, theme: 'catppuccin-mocha' },
+      ],
+    ],
   },
 });
 

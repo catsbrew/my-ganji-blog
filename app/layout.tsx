@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { inter } from '@/app/ui/fonts';
 import '@/app/globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
+import AppHeader from './ui/app-header';
 
 export const metadata: Metadata = {
   title: {
@@ -26,6 +27,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <div className="w-[100vw] h-[100vh] flex flex-col items-center m-auto">
+            <AppHeader />
             {children}
           </div>
         </ThemeProvider>
